@@ -19,29 +19,51 @@ class dstar():
     rospy.on_shutdown(self.shutdown)
 
     # Define parameters
-    self.cost = np.array
+    #self.cost = np.array
     self.vertices = np.array([1,9,17,25,33,41,49,57,65,66,67,59])
+    self.open = []
+    self.close = []
+    self.pred = np.array([][])
+    self.succ = np.array([][])
+    self.k_m = 0
+    self.
+    print self.vertices
+    print self.vertices.size
+
     
     # Establish publishers and subscribers
     
     self.currentnode_sub = rospy.Subscriber("/current_node",String,self.callback)
-    self.goal_pub = rospy.Publisher("/goal",String,queue_size = 1)    
+    self.goal_pub = rospy.Publisher("/goal",Int32,queue_size = 1)    
     
   def shutdown(self):
     rospy.sleep(0.1)
 
-  def callback(self,data):
-    
-    for ii in len(self.vertices):
+  def getG(u):
+    if (u==Xg):
+      return 0
+    else:
+      m = succ(u)
       
-      print data.data
-      print self.vertices[ii]
-#      while(data.data != self.vertices[ii]):
-#        self.goal_pub.publish(self.vertices[ii])
-        
+      
+
+#  def callback(self,data):
+    
+#    for x in (0,self.vertices.size-1):
+      
+#      print data.data
+#      print x 
+      #while(data.data != self.vertices[x]):
+#       self.goal_pub.publish(self.vertices[x])
+
+#       rospy.spin()
     
     
-#    def initialize():
+  def update_vertex(u):
+
+    if (u!= Xg):
+      rhs[u] = min
+
 
     
 # initialize open, close as lists
