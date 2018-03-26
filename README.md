@@ -5,5 +5,4 @@ A real-time path planning algorithm for a car-like robot navigating through a dy
 This is the initial version of D*-Lite algortihm implemented for a class project. 
 Unfortunately, I lost the files including the created simulation environment with a four-way intersection where robots imitate pedestrians and cars following a pre-defined path.
 
-A video demonstration:
-[linkname](https://youtu.be/qP9OPyRzyTA)
+A [video](https://youtu.be/qP9OPyRzyTA) demonstration:
